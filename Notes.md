@@ -8,7 +8,7 @@ React.js é uma biblioteca JavaScript para criar interfaces de usuário. É mant
 
 - ### Por que usar React.js?
 
-Um dos principais ...
+Um dos principais motivos para usar React.js é que ele permite criar interfaces de usuário de forma simples e rápida. Ele também permite criar componentes reutilizáveis, o que facilita a manutenção do código. Além disso, ele é uma biblioteca JavaScript, o que significa que você pode usar JavaScript para escrever código React.js.
 
 ## Primeiro Projeto
 
@@ -156,42 +156,6 @@ class Counter extends React.Component {
 }
 
 export default Counter;
-```
-- ### Ciclo de vida
-
-O ciclo de vida de um componente é o conjunto de métodos que são executados durante a execução do programa. Vamos criar um componente chamado `Clock` que renderiza um relógio na tela e atualiza o relógio a cada segundo.
-
-```javascript
-import React from 'react';
-
-class Clock extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { date: new Date() };
-  }
-
-  componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 1000);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
-
-  tick() {
-    this.setState({ date: new Date() });
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>{this.state.date.toLocaleTimeString()}</h1>
-      </div>
-    );
-  }
-}
-
-export default Clock;
 ```
 - ### Eventos
   
