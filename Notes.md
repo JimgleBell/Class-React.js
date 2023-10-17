@@ -60,8 +60,6 @@ Está localizado na pasta `src` e é o arquivo que contém o componente principa
 
 ## Componentes
 
-Vamos agora criar um componente simples para entender como eles funcionam. Para isso, vamos criar um componente chamado `HelloWorld` que renderiza um texto na tela.
-
 - ## Classe vs Função
 
 Existem duas formas de criar um componente em React.js: usando uma classe ou usando uma função. Ambas as formas serão abordadas nos exemplos abaixo. A principal diferença entre elas é que os componentes criados usando uma classe podem ter um estado, enquanto os componentes criados usando uma função presisam usar hooks para ter um estado.
